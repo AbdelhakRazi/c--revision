@@ -1,1 +1,3 @@
 # smart-pointers-c-
+- The const qualifier on a member function does not make the method itself "const." Instead, it means that the method does not modify the state of the object (i.e., it cannot modify member variables of the class, except those marked as mutable).
+In a const member function, the this pointer is treated as a pointer to a const object, effectively of type const A*. This prevents modification of any non-mutable members.
