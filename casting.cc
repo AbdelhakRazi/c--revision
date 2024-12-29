@@ -11,7 +11,7 @@ class A {
 int main () {
     const char* test = "Hi world";
     char* tes2 = const_cast<char*>(test);
-    //*tes2 = 'C'; this cannot be done bbecause it is a string literal, stored in read only memory, cannot be modified.
+    //*tes2 = 'C'; this cannot be done because it is a string literal, stored in read only memory, cannot be modified.
     std::cout << test << std::endl;
     test = "Salam"; // points to another value
     // what happened here ? actually the address of test is the same, because the address of test doesn't change
